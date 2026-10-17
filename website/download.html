@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Download - Vortex</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-left">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">V</span>
+        <span class="logo-text">Vortex</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="games.html">Games</a>
+        <a href="catalog.html">Catalog</a>
+        <a href="download.html" class="active">Download</a>
+      </div>
+    </div>
+    <div class="nav-right">
+      <a href="login.html" class="btn btn-ghost">Log In</a>
+      <a href="signup.html" class="btn btn-primary">Sign Up</a>
+    </div>
+  </nav>
+
+  <div class="download-section">
+    <h1>Download Vortex</h1>
+    <p>Get the client to play, or start building in Studio.</p>
+
+    <div class="platform-card">
+      <h2>🪟 Windows</h2>
+      <a href="#" class="btn btn-primary" style="margin-bottom: 1rem;">Download Client</a>
+      <ol>
+        <li>Run the installer. If SmartScreen blocks it, click <strong>More info</strong> then <strong>Run anyway</strong>.</li>
+        <li>If Defender flags it after install, go to <strong>Windows Security > Virus & threat protection > Protection history</strong> and click <strong>Allow</strong>.</li>
+      </ol>
+    </div>
+
+    <div class="platform-card">
+      <h2>🍎 macOS</h2>
+      <a href="#" class="btn btn-primary" style="margin-bottom: 1rem;">Download Client</a>
+      <ol>
+        <li>Move <strong>Vortex.app</strong> (or <strong>Vortex Studio.app</strong>) to your <strong>Applications</strong> folder.</li>
+        <li>Open Terminal and run:</li>
+      </ol>
+      <code style="display:block; margin: 0.75rem 0; padding: 0.75rem;">sudo xattr -r -d com.apple.quarantine /Applications/Vortex.app</code>
+    </div>
+
+    <div class="platform-card">
+      <h2>🐧 Linux</h2>
+      <p style="color: var(--text-muted); margin-bottom: 0.5rem;">Coming Soon</p>
+      <p style="color: var(--text-muted); font-size: 0.9rem;">Linux support is in progress and will be available in a future update.</p>
+    </div>
+
+    <div class="note">
+      These warnings appear because Vortex isn't code-signed yet. The app is safe — code signing is coming in a future update. If you have questions, join our Discord Server.
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-icon small">V</span>
+        <span>Vortex</span>
+      </div>
+      <div class="footer-links">
+        <a href="#">Discord</a>
+        <a href="#">Wiki</a>
+        <a href="download.html">Download</a>
+        <a href="#">Support</a>
+      </div>
+      <p class="copyright">© 2026 Vortex Recreation · Built for the community</p>
+    </div>
+  </footer>
+</body>
+</html>
