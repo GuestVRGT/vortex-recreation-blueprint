@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up - Vortex</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-left">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">V</span>
+        <span class="logo-text">Vortex</span>
+      </a>
+    </div>
+    <div class="nav-right">
+      <a href="login.html" class="btn btn-ghost">Log In</a>
+    </div>
+  </nav>
+
+  <div class="auth-container">
+    <div class="auth-card">
+      <h1>Create your account</h1>
+      <p class="sub">Join Vortex and start playing & creating for free.</p>
+      <form id="signup-form">
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" required placeholder="CoolPlayer123" autocomplete="username">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required placeholder="you@example.com" autocomplete="email">
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required placeholder="••••••••" autocomplete="new-password" minlength="8">
+        </div>
+        <button type="submit" class="btn btn-primary">Sign Up</button>
+      </form>
+      <div class="auth-footer">
+        Already have an account? <a href="login.html">Log in</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('signup-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Account creation is a stub for now! Backend coming soon nya~');
+    });
+  </script>
+</body>
+</html>
